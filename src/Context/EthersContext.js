@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 export const EthersContext = createContext(null);
 const { ethereum } = window
-
+if(!ethereum) alert("Please install metamask to use the application")
 
 export default function Ethers({ children }) {
   const contractAddress = "0x3e3af332c1fd7b1eb5d35c49d0f6cee46a13df40"
