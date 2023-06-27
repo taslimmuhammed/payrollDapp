@@ -228,8 +228,8 @@ export default function Ethers({ children }) {
       const account = await getWallet()
       const contract = getContract()
       let res = await contract.calculateTotalSalary(account)
-      const etherValue = ethers.utils.formatEther(res._hex);
-      return parseInt(etherValue, 16)
+      res = res.div(10 ** 18 + "")
+      return parseInt(res._hex, 16)
     }
     catch (e) {
       console.log(e)

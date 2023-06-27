@@ -7,7 +7,6 @@ import Loader from "./Loader";
 import { ethers } from "ethers";
 
 function Company() {
-  // getEmployeeList, calculateTotalSalary, removeEmployee, changeEmployeeSalary,
   const { getEmployeeList, calculateTotalSalary, removeEmployee, payEmployees, getName, setEmpWallet } = useContext(EthersContext)
   const [Loaded, setLoaded] = useState(false)
   const [TotalSal, setTotalSal] = useState(0)
