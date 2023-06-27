@@ -61,7 +61,7 @@ function Employee() {
                       const date = new Date(parseInt(transaction.time, 16) * 1000);
                       return (<div className='tr_card'>
                         <div className='tr_amount'>{etherValue} matic</div>
-                        <div className="trtime">{date.getDate()}/{date.getMonth()}/{date.getFullYear()} {date.getHours()}:{date.getMinutes()}</div>
+                        <div className="trtime">{date.getDate()}/{date.getMonth()}/2023 {date.getHours()}:{date.getMinutes()}</div>
                   </div>)})
                   }
                   
